@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #0f0f0f;
+  color: #eaeaea;
+  text-align: center;
+}
+
+header {
+  padding: 3rem 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  opacity: 0.6;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
