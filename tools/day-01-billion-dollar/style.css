@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  background: #0f0f0f;
+  color: #eaeaea;
+  font-family: system-ui, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.money {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.category {
+  padding: 2rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+button.item {
+  background: #1c1c1c;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.05s ease, background 0.2s;
+}
+
+button.item:active {
+  transform: scale(0.95); /* micro-compression */
+  background: #333;
+}
+
+.log {
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.8;
+  min-height: 2rem;
+}
+
+.feedback {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hidden {
+  display: none;
+}
