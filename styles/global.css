@@ -4,22 +4,79 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #0f0f0f;
+  background: #0f0f0f;
   color: #eaeaea;
-  text-align: center;
+  font-family: system-ui, sans-serif;
 }
 
-header {
+/* Header */
+.site-header {
+  text-align: center;
   padding: 3rem 1rem;
 }
 
-main {
-  padding: 2rem;
+.site-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-footer {
-  opacity: 0.6;
+.tagline {
+  opacity: 0.7;
+}
+
+/* Tool Rack */
+.tool-rack {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Tool Card */
+.tool-card {
+  background: #151515;
+  border: 1px solid #2a2a2a;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+  border-color: #444;
+}
+
+.tool-card h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.tool-card p {
+  margin: 0;
   font-size: 0.9rem;
-  padding: 1rem;
+  opacity: 0.7;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .tool-rack {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .tool-rack {
+    grid-template-columns: 1fr;
+  }
 }
